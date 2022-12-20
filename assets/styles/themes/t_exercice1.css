@@ -1,4 +1,36 @@
 :root{
-    --div-background: background-color: aliceblue;
-    --color: color: blue;
+    --div-background:  #2c2c2c;
+    --text-color:  #b3009b;
+    --dt-color: #ff00dd;
+}
+html{
+    background-color: var(--div-background);
+}
+header{
+    background-color: var(--text-color);
+    color: var(--div-background);
+}
+main{
+    color: var(--text-color);
+}
+.card{
+    border: thick double var(--text-color);
+}
+h2{
+    color: white;
+}
+
+em{
+    color: gray;
+}
+
+dt{
+    color: var(--dt-color);
+}
+
+hr{
+    border: 1px solid var(--text-color);
+}
+footer{
+    color: gold;
 }
