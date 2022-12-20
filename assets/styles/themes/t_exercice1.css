@@ -16,6 +16,7 @@ main{
 .card{
     border: thick double var(--text-color);
 }
+
 h2{
     color: white;
 }
