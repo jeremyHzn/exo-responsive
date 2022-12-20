@@ -1,0 +1,34 @@
+@import "./themes/t_index.css";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    text-align: center;
+    padding-top: 20px;
+    height: 20vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+nav{
+    width: 50%;
+    display: block;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    margin: 10px 0;
+
+}
+
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+}
