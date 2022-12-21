@@ -1,5 +1,5 @@
 @import "./reset.css";
-
+@import "./themes/t_exercice1.css";
 
 header{
     text-align: center;
@@ -30,11 +30,6 @@ img{
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
     padding: 20px;
 }
 
@@ -42,30 +37,25 @@ img{
     padding-right: 20px;
 }
 
-@media screen and (min-width: 640px) {   
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+@media screen and (min-width: 640px) { 
+    div{
+        display: inline-block;
+    }  
     img{
         height: 250px;
     }
     .card{
         max-width: 450px;
-        
     }
 }
 
 @media screen and (min-width: 800px) {
     header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
     }
 }
 @media print {
     footer{
-        display: flex;
+        display: block;
     }
 }
