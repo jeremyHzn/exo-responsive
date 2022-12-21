@@ -2,21 +2,18 @@
 @import "./themes/t_exercice1.css";
 
 header{
-    text-align: center;
     display: none;
-    height: 10vh;
-    align-self: center;
 }
 
 footer{
     display: none;
-    justify-content: center;
-    padding-top: 10px;
+
 }
 
 dt{
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: underline;
     padding-top: 10px;
 }
 
@@ -25,6 +22,8 @@ li{
 }
 
 img{
+    display: block;
+    margin: 0 auto;
     margin-top: 15px;
     height: 450px;
 }
@@ -37,10 +36,11 @@ img{
     padding-right: 20px;
 }
 
+
 @media screen and (min-width: 640px) { 
     div{
-        display: inline-block;
-    }  
+        display: inline-table;    
+    }
     img{
         height: 250px;
     }
@@ -53,9 +53,23 @@ img{
     header{
         display: block;
     }
+    nav{
+        height: 10vh;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 50px;
+    }
+    nav h1{
+        text-align: center;
+    }
 }
+
 @media print {
     footer{
         display: block;
+        padding-top: 10px;
+    }
+    footer p{
+        text-align: center;
     }
 }
