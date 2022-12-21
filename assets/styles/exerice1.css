@@ -28,24 +28,24 @@ img{
     height: 450px;
 }
 
-.card{
+main > div{
     padding: 20px;
 }
 
-.card > div{
+main > div > div{
     padding-right: 20px;
 }
 
 
-@media screen and (min-width: 640px) { 
+@media screen and (min-width: 640px) {
     div{
-        display: inline-table;    
+        display: inline-table;
+        height: 550px;  
+        
     }
-    img{
-        height: 250px;
-    }
-    .card{
-        max-width: 450px;
+    main > div{
+        
+        width: 470px;
     }
 }
 

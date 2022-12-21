@@ -1,5 +1,5 @@
 :root{
-    --div-background:  #2c2c2c;
+    --div-background:  #1c1c1c;
     --text-color:  #b3009b;
     --dt-color: #ff00dd;
 }
@@ -13,7 +13,7 @@ header{
 main{
     color: var(--text-color);
 }
-.card{
+main > div{
     border: thick double var(--text-color);
 }
 
