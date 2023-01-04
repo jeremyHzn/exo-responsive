@@ -1,5 +1,5 @@
-@import "./reset.css";
-@import "./themes/t_exercice1.css";
+@import "../reset.css";
+@import "../themes/t_exercice1.css";
 
 header{
     display: none;
