@@ -3,4 +3,5 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select:none;
+    -webkit-user-select:none;
 }
