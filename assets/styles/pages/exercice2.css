@@ -7,10 +7,9 @@ h1{
 h2{
     font-size: 1.5em;
 }
-section,div{
-    margin: 5px;
+hr{
+    height: 0.1em;
 }
-
 article > div{
     display: inline-block;
     vertical-align: top;
@@ -18,20 +17,62 @@ article > div{
 section > article div:nth-child(2){
     margin-left: 25%;
 }
-div:nth-child(n+3) > article:nth-child(1) > h3,
-div:nth-child(n+3) > article:nth-child(1) > img,
-div:nth-child(n+3) > article:nth-child(1) > ul,
-div:nth-child(n+3) > article:nth-child(1) > p{
+
+div > article{
+    padding: 0 5px;
+}
+h3{
+    display: inline;
+    margin-left: 0;
+}
+div:nth-child(n+3) > article:nth-child(1) > h3{
+    margin: 0;
+}
+
+div:nth-child(n+3)> article:nth-child(1) >:is(img,ul,p){
     display: inline-table;
-    margin: 0 50px;
+    margin: 0 4%;
     vertical-align: middle;
 }
+
 ul{
     list-style: none;
-    padding-inline-start: 0;
 }
 img{
     width: 100px;
     height: 120px;
 }
 
+@media screen and (min-width: 915px) {
+    div:nth-child(n+3) > article:nth-child(1) > :is(img,ul,p){
+        margin: 0 10%;
+    }
+}
+@media screen and (min-width: 1680px) {
+    hr{
+        display: none;
+        border: 0px solid ;
+    }
+    div article:nth-child(n){
+        
+        display: inline-table;
+        text-align: center;
+        padding: 0 50px;
+    }
+    main > div:nth-child(n){
+        display: inline;
+    }
+    
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    div:nth-child(n+3)> article:nth-child(1) >:is(img,ul,p){
+        display: block;
+        margin: 0 auto;
+    }
+    div:nth-child(n+3)> article:nth-child(1) > ul{
+        padding-inline-start: 0px;
+    }
+    
+}
