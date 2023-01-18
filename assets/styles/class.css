@@ -1,0 +1,80 @@
+div {
+    display: ;
+    }
+
+.container {
+    width: 100%;
+    background-color: rgba(255, 191, 112, 0.763);
+    height: 80vh;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.32);
+}
+
+/*
+ * WTF je comprend pas pourquoi
+ * ça prend pas toute la taille de l'ecran
+*/
+
+/* 12 */
+.col-1 {
+    width: calc(100%/12);
+    background-color: rgba(255, 255, 0, 0.641);
+}
+
+/* 6 */
+.col-2 {
+    width: calc(200%/12);
+}
+/* 3 */
+.col-3 {
+    width: calc(200%/12);
+
+}
+
+@media screen and (min-width: 700px) {
+    .col-sm-1 {
+        width: calc(100%/12);
+    }
+
+    .col-sm-2 {
+        width: calc(200%/12);
+
+    }
+
+    .col-sm-3 {
+        width: calc(300%/12);
+        /* test */
+        background-color: rgba(0, 255, 255, 0.462);
+        height: 50vh;
+    }
+
+    .col-sm-4 {
+        width: calc(400%/12);
+    }
+
+    .col-sm-5 {
+        width: calc(500%/12);
+    }
+
+    .col-sm-5 {
+        width: calc(600%/12);
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container-fluid {
+        margin: 0 5%;
+    }
+}
