@@ -48,7 +48,7 @@ img{
         margin: 0 10%;
     }
 }
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1280px) {
     hr{
         display: none;
         border: 0px solid ;
