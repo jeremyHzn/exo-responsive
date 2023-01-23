@@ -1,3 +1,27 @@
 @import "../reset.css";
-@import "../class.css";
+@import "../responsive.css";
 @import "../themes/t_exercice3.css";
+
+.container, .container-fluid, .row {
+    width: 100%;
+}
+
+.row > div{
+    /*
+     * aligner les div's
+     */
+    float: left;
+    /*
+     * centrer les div pour rendre mieux
+     */
+    display: flex;
+    justify-content: center;
+}
+article div{
+    margin: 20px 5%;
+    height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: blue;
+}
+

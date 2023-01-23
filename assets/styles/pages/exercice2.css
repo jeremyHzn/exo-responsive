@@ -54,8 +54,7 @@ img{
         border: 0px solid ;
     }
     div article:nth-child(n){
-        
-        display: inline-table;
+        float: left;
         text-align: center;
         padding: 0 50px;
     }
